@@ -4,8 +4,8 @@ import { CheckCircle, Zap, TrendingUp, Target, Award, Clock } from 'lucide-react
 const diferenciais = [
   {
     icon: <Award className="w-6 h-6 text-purple-500" />,
-    title: "15+ Anos de Experiência",
-    description: "Mais de 15 anos de experiência global em sustentação e desenvolvimento de sistemas complexos"
+    title: "5+ Anos de Experiência",
+    description: "Mais de 5 anos de experiência global em sustentação e desenvolvimento de sistemas complexos"
   },
   {
     icon: <Zap className="w-6 h-6 text-indigo-500" />,

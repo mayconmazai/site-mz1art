@@ -1,5 +1,5 @@
 import { motion } from 'motion/react'
-import mz1FullLogo from 'figma:asset/4cea5d5db742e31f53138d858a7c1efaa3376a34.png'
+import mz1FullLogo from 'build/assets/4cea5d5db742e31f53138d858a7c1efaa3376a34.png'
 
 export default function Apresentacao() {
   return (
@@ -19,7 +19,7 @@ export default function Apresentacao() {
             <div className="prose prose-lg text-gray-700 leading-relaxed">
               <p className="text-xl mb-6">
                 Bem-vindo à <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent font-bold">MZ1 ART</span>, seu parceiro estratégico em inovação tecnológica. 
-                Com mais de 15 anos de experiência global, entregamos soluções web e aplicativos móveis que impulsionam empresas, 
+                Com mais de 5 anos de experiência global, entregamos soluções web e aplicativos móveis que impulsionam empresas, 
                 otimizam processos e geram resultados excepcionais.
               </p>
             </div>

@@ -46,10 +46,10 @@ export default function Header() {
             <div className="flex items-center gap-2">
               <Mail size={16} className="text-purple-200" />
               <a
-                href="mailto:maycon@mz1art.com"
+                href="mailto:maycon.mazai@mz1art.com"
                 className="hover:text-purple-100 transition-colors"
               >
-                maycon@mz1art.com
+                maycon.mazai@mz1art.com
               </a>
             </div>
           </div>
