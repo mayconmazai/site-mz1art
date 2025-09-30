@@ -10,7 +10,7 @@ export default defineConfig({
     // visualizer({ open: true }), // Descomente para analisar o bundle (útil para otimização)
     // compression({ algorithm: 'gzip' }), // Descomente para compressão Gzip (reduz tamanho dos arquivos)
   ],
-  base: '/', // Base correta para GitHub Pages (ajuste para '/nome-do-repositorio/' se necessário)
+  base: '/site-mz1art/', // Base correta para GitHub Pages (ajuste para '/nome-do-repositorio/' se necessário)
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'], // Extensões suportadas
     alias: {

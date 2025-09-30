@@ -15,12 +15,12 @@ const servicos = [
   {
     icon: <Database className="w-8 h-8 text-blue-600" />,
     title: "Gestão de Banco de Dados",
-    description: "Otimização e suporte especializado em PostgreSQL, assegurando integração e performance robustas."
+    description: "Otimização e suporte especializado em bancos de dados, garantindo integração eficiente e performance robusta."
   },
   {
     icon: <Cloud className="w-8 h-8 text-cyan-600" />,
     title: "Gestão de Infraestrutura em Nuvem",
-    description: "Administração de ambientes em Supabase, AWS e Heroku, priorizando segurança e alta performance."
+    description: "Administração de ambientes em nuvem, com foco em segurança, disponibilidade e alta performance."
   },
   {
     icon: <Bot className="w-8 h-8 text-green-600" />,
