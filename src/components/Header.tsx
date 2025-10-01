@@ -19,8 +19,11 @@ export default function Header() {
               <div className="bg-gradient-to-l from-transparent to-white rounded-[100%] scale-80 absolute z-0 w-[calc(115%+0.125rem)] h-[calc(140%+0.125rem)] shadow-[0_0_60px_rgba(0,0,0,0.500)]"></div>
               <img
                 src={mz1FullLogo}
-                alt="MZ1 ART Logo"
+                alt="MZ1 ART Logo - Soluções Tecnológicas"
                 className="w-auto h-64 relative z-10"
+                loading="eager"
+                width="256"
+                height="256"
               />
             </div>
             <div className="text-center sm:text-left">

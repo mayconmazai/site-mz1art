@@ -1,44 +1,101 @@
 <!DOCTYPE html>
-<html lang="pt-BR"> <!-- Alterado para pt-BR, pois o site é em português -->
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Transforme seu negócio com a MZ1 ART! Oferecemos soluções tecnológicas escaláveis, como desenvolvimento de apps, automação, marketing digital e suporte 24/7. Aumente sua eficiência e alcance global com nossos serviços inovadores. Conheça nossos planos!" />
-    <meta name="keywords" content="MZ1 ART, soluções tecnológicas, desenvolvimento de apps, automação, marketing digital, suporte técnico, tecnologia escalável" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+    <!-- SEO Meta Tags -->
+    <title>MZ1 ART - Soluções Tecnológicas Escaláveis | Desenvolvimento de Apps e Automação</title>
+    <meta name="description" content="Transforme seu negócio com a MZ1 ART! Oferecemos soluções tecnológicas escaláveis, como desenvolvimento de apps, automação, marketing digital e suporte 24/7. Aumente sua eficiência e alcance global com nossos serviços inovadores." />
+    <meta name="keywords" content="MZ1 ART, soluções tecnológicas, desenvolvimento de apps, automação, marketing digital, suporte técnico, tecnologia escalável, desenvolvimento web, aplicativos móveis, cloud computing, CTO as a Service" />
     <meta name="author" content="MZ1 ART" />
     <meta name="robots" content="index, follow" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- Compatibilidade com IE -->
+    <link rel="canonical" href="https://mz1art.com/" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mz1art.com/" />
     <meta property="og:title" content="MZ1 ART - Soluções Tecnológicas Escaláveis" />
     <meta property="og:description" content="Descubra como a MZ1 ART transforma negócios com tecnologia inovadora, automação e suporte 24/7." />
-    <meta property="og:image" content="/logo-mz1.png" /> <!-- Adicione o caminho da imagem do site -->
-    <meta property="og:url" content="https://mz1art.com/" /> <!-- URL do site -->
-    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://mz1art.com/logo-mz1.png" />
+    <meta property="og:site_name" content="MZ1 ART" />
+    <meta property="og:locale" content="pt_BR" />
+    
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-
-    <title>MZ1 ART - Soluções em Tecnologia</title>
-
-    <!-- Pré-carregamento de recursos críticos -->
-    <link rel="preload" href="/src/main.tsx" as="script" />
-
+    <meta name="twitter:url" content="https://mz1art.com/" />
+    <meta name="twitter:title" content="MZ1 ART - Soluções Tecnológicas Escaláveis" />
+    <meta name="twitter:description" content="Descubra como a MZ1 ART transforma negócios com tecnologia inovadora, automação e suporte 24/7." />
+    <meta name="twitter:image" content="https://mz1art.com/logo-mz1.png" />
+    
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-
-    <!-- Estilos base (se aplicável, ou deixe para o Vite injetar) -->
-    <!-- <link rel="stylesheet" href="/src/styles.css" /> -->
+    <link rel="apple-touch-icon" href="/logo-mz1.png" />
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- JSON-LD Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "MZ1 ART",
+      "url": "https://mz1art.com",
+      "logo": "https://mz1art.com/logo-mz1.png",
+      "description": "Soluções tecnológicas escaláveis para transformar seu negócio",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Curitiba",
+        "addressRegion": "PR",
+        "addressCountry": "BR"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+55-41-99137-4732",
+        "contactType": "Customer Service",
+        "email": "maycon.mazai@mz1art.com",
+        "availableLanguage": ["pt-BR", "en"]
+      },
+      "sameAs": [
+        "https://wa.me/5541991374732"
+      ]
+    }
+    </script>
   </head>
 
   <body>
-    <div id="root"></div> <!-- Container para o React -->
-
-    <!-- Script principal com fallback -->
+    <div id="root"></div>
+    
+    <!-- Script principal -->
     <script type="module" src="/src/main.tsx"></script>
-    <script nomodule src="/src/main.js" defer></script> <!-- Fallback para browsers sem suporte a módulos -->
 
-    <!-- Adição de atributos ARIA para acessibilidade -->
+    <!-- Fallback para JavaScript desabilitado -->
     <noscript>
-      <style>html { display: none; }</style>
-      <div style="display: block; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-        <h1>Este site requer JavaScript!</h1>
+      <style>
+        body { 
+          display: flex; 
+          align-items: center; 
+          justify-content: center; 
+          min-height: 100vh; 
+          margin: 0;
+          font-family: system-ui, -apple-system, sans-serif;
+          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          color: white;
+          text-align: center;
+          padding: 20px;
+        }
+        .noscript-container {
+          max-width: 500px;
+        }
+        h1 { font-size: 2rem; margin-bottom: 1rem; }
+        p { font-size: 1.1rem; line-height: 1.6; }
+      </style>
+      <div class="noscript-container">
+        <h1>⚠️ JavaScript Necessário</h1>
+        <p>Este site requer JavaScript para funcionar corretamente.</p>
         <p>Por favor, ative o JavaScript em seu navegador e recarregue a página.</p>
       </div>
     </noscript>

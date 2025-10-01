@@ -1,0 +1,16 @@
+# robots.txt para mz1art.com
+# Permite que todos os bots indexem o site
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://mz1art.com/sitemap.xml
+
+# Crawl-delay para bots mais agressivos (opcional)
+# Crawl-delay: 1
+
+# Bloquear arquivos de build/config (se necessário)
+Disallow: /build/
+Disallow: /*.json$
+Disallow: /*.map$
