@@ -1,8 +1,8 @@
 import { motion } from "motion/react";
-import { Mail, Phone } from "lucide-react";
+import { Mail } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 import { useTranslation } from 'react-i18next';
-import mz1FullLogo from "figma:asset/4cea5d5db742e31f53138d858a7c1efaa3376a34.png";
+import React from "react";
 
 export default function Header() {
   const { t } = useTranslation();
@@ -20,12 +20,10 @@ export default function Header() {
             <div className="relative flex items-center justify-center">
               <div className="bg-gradient-to-l from-transparent to-white rounded-[100%] scale-80 absolute z-0 w-[calc(115%+0.125rem)] h-[calc(140%+0.125rem)] shadow-[0_0_60px_rgba(0,0,0,0.500)]"></div>
               <img
-                src={mz1FullLogo}
+                src="/header-logo.png"
                 alt="MZ1 ART Logo - Soluções Tecnológicas"
                 className="w-auto h-64 relative z-10"
                 loading="eager"
-                width="256"
-                height="256"
               />
             </div>
             <div className="text-center sm:text-left">
@@ -34,9 +32,7 @@ export default function Header() {
               </h1>
             </div>
           </div>
-          <div className="flex flex-col md:flex-row items=center gap-4 text-sm">
-            <div className="flex items-center gap-2">
-            </div>
+          <div className="flex flex-col md:flex-row items-center gap-4 text-sm">
             <div className="flex items-center gap-2">
               <FaWhatsapp size={16} className="text-purple-200" />
               <a
