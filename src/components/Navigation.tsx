@@ -51,7 +51,7 @@ export default function Navigation() {
   }, [])
 
   return (
-    <nav className="sticky top-0 bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50" aria-label="Navegação principal">
+    <nav className="sticky top-0 bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-700 z-50" aria-label="Navegação principal">
       <div className="container mx-auto px-4">
         <div className="font-semibold flex items-center justify-between py-4">
           <div className="lg:hidden flex items-center gap-2">

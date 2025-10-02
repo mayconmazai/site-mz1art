@@ -67,13 +67,12 @@ export default function Servicos() {
       icon: <FileText className="w-8 h-8 text-orange-600" />,
       title: t('services.service9.title'),
       subtitle: t('services.service9.subtitle'),
-      description: t('services.service9.description'),
       beneficio: t('services.service9.benefit')
     }
   ]
 
   return (
-    <section id="servicos" className="pt-28 pb-20 md:pt-36 md:pb-24 bg-gradient-to-b from-gray-50 to-white scroll-mt-28 md:scroll-mt-36">
+    <section id="servicos" className="pt-[120px] pb-20 md:pt-[152px] md:pb-24 bg-gradient-to-b from-gray-50 to-white dark:from-gray-800 dark:to-gray-900 scroll-mt-28 md:scroll-mt-36">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -88,7 +87,7 @@ export default function Servicos() {
             <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
               {t('services.title')}
             </h2>
-            <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed mb-10 md:mb-14">
+            <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed mb-10 md:mb-14">
               {t('services.subtitle')}
               <br />
               <br />
@@ -104,7 +103,7 @@ export default function Servicos() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
                 whileHover={{ y: -5, transition: { duration: 0.2 } }}
-                className="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition-all border border-gray-100 group"
+                className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-sm hover:shadow-xl transition-all border border-gray-100 dark:border-gray-700 group"
               >
                 <div className="flex flex-col h-full">
                   {/* Ícone */}
@@ -114,24 +113,24 @@ export default function Servicos() {
                   
                   {/* Conteúdo */}
                   <div className="flex-1">
-                    <p className="text-xs font-semibold text-indigo-600 uppercase tracking-wide mb-2">
+                    <p className="text-xs font-semibold text-purple-600 dark:text-purple-400 uppercase tracking-wide mb-2">
                       {servico.subtitle}
                     </p>
-                    <h3 className="text-xl font-bold text-gray-900 mb-4">
+                    <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
                       {servico.title}
                     </h3>
-                    <p className="text-gray-600 text-sm leading-relaxed mb-6">
+                    <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
                       {servico.description}
                     </p>
                   </div>
                   
                   {/* Benefício destacado */}
-                  <div className="mt-auto pt-5 border-t border-gray-100">
+                  <div className="mt-auto pt-4 border-t border-gray-100 dark:border-gray-700">
                     <div className="flex items-start gap-3">
                       <svg className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                       </svg>
-                      <p className="text-sm font-medium text-gray-900">
+                      <p className="text-sm font-medium text-green-600 dark:text-green-400 flex items-center gap-2">
                         {servico.beneficio}
                       </p>
                     </div>

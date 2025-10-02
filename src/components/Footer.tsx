@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next'
 export default function Footer() {
   const { t } = useTranslation()
   return (
-    <footer className="bg-gradient-to-r from-indigo-900 to-purple-900 text-white py-16">
+    <footer className="bg-gradient-to-r from-indigo-900 to-purple-900 dark:from-gray-900 dark:to-gray-800 text-white py-16">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -54,17 +54,17 @@ export default function Footer() {
           </div>
 
           {/* Confidencialidade */}
-          <div className="bg-gradient-to-r from-indigo-800 to-purple-800 p-8 rounded-lg mb-8">
+          <div className="bg-gradient-to-r from-indigo-800 to-purple-800 dark:from-gray-800 dark:to-gray-700 p-8 rounded-lg mb-8">
             <h3 className="text-xl font-bold mb-4 text-center text-purple-300">
               {t('footer.confidentialityTitle')}
             </h3>
-            <p className="text-sm text-gray-300 leading-relaxed text-center">
+            <p className="text-sm text-gray-300 dark:text-gray-400 leading-relaxed text-center">
               {t('footer.confidentialityText')}
             </p>
           </div>
 
           {/* Copyright */}
-          <div className="border-t border-purple-700 pt-8">
+          <div className="border-t border-purple-700 dark:border-gray-700 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
               <div className="text-center md:text-left">
                 <h4 className="font-bold text-purple-300">{t('footer.companyName')}</h4>

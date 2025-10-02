@@ -7,7 +7,7 @@ import mz1FullLogo from "figma:asset/4cea5d5db742e31f53138d858a7c1efaa3376a34.pn
 export default function Header() {
   const { t } = useTranslation();
   return (
-    <header className="bg-gradient-to-tr from-[#121EA8] to-[#BD31F5] text-white py-4 shadow-md">
+    <header className="bg-gradient-to-tr from-[#121EA8] to-[#BD31F5] dark:from-indigo-900 dark:to-purple-900 text-white py-4 shadow-md">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
