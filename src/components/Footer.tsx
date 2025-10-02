@@ -1,6 +1,7 @@
 import { motion } from 'motion/react'
 import { Shield, FileText, Eye } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
+import React from 'react'
 
 export default function Footer() {
   const { t } = useTranslation()
