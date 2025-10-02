@@ -1,0 +1,291 @@
+{
+  "nav": {
+    "home": "Início",
+    "howItWorks": "Como Funciona",
+    "services": "Serviços",
+    "whyUs": "Por que MZ1?",
+    "plans": "Planos",
+    "faq": "FAQ",
+    "contact": "Contato",
+    "cta": "Falar com Especialista"
+  },
+  "hero": {
+    "title1": "Cuidamos da",
+    "title2": "Tecnologia",
+    "title3": "do Seu Negócio.",
+    "title4": "Você Foca no Crescimento.",
+    "subtitle": "Do marketing digital aos apps inteligentes com IA, somos o parceiro que",
+    "subtitleBold": " empresas de todos os tamanhos ",
+    "subtitleEnd": "confiam para escalar sem dor de cabeça.",
+    "proof1": "50+ projetos entregues",
+    "proof2": "Atendimento global (PT, EN, ES)",
+    "proof3": "99.9% de disponibilidade"
+  },
+  "howItWorks": {
+    "title": "Como Funciona?",
+    "subtitle": "Um processo simples e transparente, do primeiro contato até o sucesso do seu projeto",
+    "step1": {
+      "title": "Diagnóstico Gratuito",
+      "description": "Conversa de 30 minutos para entender seus desafios e objetivos",
+      "time": "30 minutos"
+    },
+    "step2": {
+      "title": "Proposta Personalizada",
+      "description": "Receba um plano detalhado com escopo, prazos e investimento",
+      "time": "48 horas"
+    },
+    "step3": {
+      "title": "Implementação Rápida",
+      "description": "Começamos a trabalhar imediatamente, com entregas semanais",
+      "time": "A partir de 7 dias"
+    },
+    "step4": {
+      "title": "Suporte Contínuo",
+      "description": "Acompanhamento 24/7 para garantir que tudo funcione perfeitamente",
+      "time": "Sempre disponível"
+    },
+    "ctaTitle": "Pronto para começar sua transformação digital?",
+    "ctaButton1": "Agendar Diagnóstico Gratuito",
+    "ctaButton2": "Chat no WhatsApp"
+  },
+  "services": {
+    "title": "Como Cuidamos do Seu Negócio",
+    "subtitle": "Soluções completas para cada etapa da sua jornada digital",
+    "service1": {
+      "subtitle": "Desenvolvimento de Aplicações",
+      "title": "Apps que Vendem Mais",
+      "description": "Transforme suas ideias em apps e sistemas web que seus clientes adoram usar. Entregamos no prazo, sem surpresas.",
+      "benefit": "Aumente suas vendas e reduza custos operacionais"
+    },
+    "service2": {
+      "subtitle": "Inteligência Artificial",
+      "title": "Automação Inteligente com IA",
+      "description": "Automatize tarefas repetitivas e ganhe insights poderosos com IA. Sua equipe foca no que realmente importa.",
+      "benefit": "Economize até 40% do tempo da sua equipe"
+    },
+    "service3": {
+      "subtitle": "Marketing Digital & Redes Sociais",
+      "title": "Marketing que Converte",
+      "description": "Do site institucional às campanhas nas redes sociais. Criamos conteúdo que atrai e converte clientes.",
+      "benefit": "Mais leads qualificados para seu negócio"
+    },
+    "service4": {
+      "subtitle": "Suporte & Manutenção 24/7",
+      "title": "Seu Sistema Sempre Online",
+      "description": "Durma tranquilo. Cuidamos de tudo: bugs, atualizações, segurança e performance. Você nem percebe que estamos lá.",
+      "benefit": "99.9% de disponibilidade garantida"
+    },
+    "service5": {
+      "subtitle": "Cloud & DevOps",
+      "title": "Infraestrutura que Escala",
+      "description": "Sua infraestrutura cresce com seu negócio. Sem travamentos, sem lentidão, sem dor de cabeça.",
+      "benefit": "Pague apenas pelo que usar, economize até 60%"
+    },
+    "service6": {
+      "subtitle": "CTO as a Service",
+      "title": "CTO Sob Demanda",
+      "description": "Tenha um líder de tecnologia experiente sem o custo de contratar um executivo. Decisões estratégicas, sem erro.",
+      "benefit": "Economize R$ 30k+/mês vs contratar CLT"
+    },
+    "service7": {
+      "subtitle": "Gestão de Banco de Dados",
+      "title": "Dados Organizados e Seguros",
+      "description": "Otimizamos seus dados para performance máxima. Consultas rápidas, backups automáticos, zero perda.",
+      "benefit": "Consultas até 10x mais rápidas"
+    },
+    "service8": {
+      "subtitle": "Expansão Internacional",
+      "title": "Conquiste o Mercado Global",
+      "description": "Levamos seu negócio para EUA e Canadá. Marketing localizado, comunicação fluente, leads qualificados.",
+      "benefit": "Acesso a mercados 5x maiores"
+    },
+    "service9": {
+      "subtitle": "Consultoria & Otimização",
+      "title": "Processos que Funcionam",
+      "description": "Identificamos gargalos, criamos processos eficientes e documentamos tudo. Sua operação roda sozinha.",
+      "benefit": "Reduza retrabalho em até 70%"
+    }
+  },
+  "faq": {
+    "title": "Perguntas Frequentes",
+    "subtitle": "Tudo o que você precisa saber antes de começar",
+    "q1": {
+      "question": "Quanto custa para começar?",
+      "answer": "Nossos projetos começam a partir de R$ 750,00 para soluções básicas. O investimento final depende do escopo, complexidade e prazos. Oferecemos diagnóstico gratuito para entender suas necessidades e criar uma proposta personalizada com ROI claro."
+    },
+    "q2": {
+      "question": "Quanto tempo leva para ver resultados?",
+      "answer": "Projetos simples podem estar no ar em 7-15 dias. Projetos mais complexos levam de 1 a 3 meses. Trabalhamos com entregas semanais (sprints), então você vê progresso constante e pode ajustar o rumo a qualquer momento."
+    },
+    "q3": {
+      "question": "Vocês atendem empresas de qual tamanho?",
+      "answer": "Atendemos desde startups e pequenos negócios até empresas consolidadas. Nossa abordagem se adapta ao seu momento: se você está começando, focamos em MVP e validação. Se já está crescendo, focamos em escala e automação."
+    },
+    "ctaTitle": "Ainda tem dúvidas? Fale com a gente! Respondemos em até 2 horas."
+  },
+  "common": {
+    "step": "Passo",
+    "loading": "Carregando...",
+    "sendEmail": "Enviar E-mail",
+    "whatsappChat": "Chat no WhatsApp",
+    "note": "Nota"
+  },
+  "whyUs": {
+    "title": "Por que a MZ1?",
+    "reason1": {
+      "title": "Foco na Saúde Financeira e Operacional",
+      "description": "Soluções estratégicas que impulsionam o sucesso sustentável do seu negócio com resultados concretos."
+    },
+    "reason2": {
+      "title": "Suporte Remoto Comprovado",
+      "description": "Atendimento remoto eficiente e de alta qualidade, consolidado desde 2020."
+    },
+    "reason3": {
+      "title": "Expertise Global",
+      "description": "Capacidade comprovada em projetos internacionais com comunicação fluida em múltiplos idiomas."
+    },
+    "reason4": {
+      "title": "Inovação e Aprendizado Contínuo",
+      "description": "Adotamos as mais recentes tecnologias e práticas do mercado para manter sua empresa à frente."
+    },
+    "ctaText": "Entre em contato e vamos construir juntos o futuro da sua empresa."
+  },
+  "plans": {
+    "title": "Planos de Atendimento",
+    "basic": {
+      "name": "Básico",
+      "description": "Ideal para pequenas aplicações com baixo volume de transações",
+      "feature1": "Monitoramento básico 8x5",
+      "feature2": "Suporte via ticket",
+      "feature3": "Atualizações mensais",
+      "feature4": "Backup semanal",
+      "feature5": "SLA de 3 dias úteis"
+    },
+    "advanced": {
+      "name": "Avançado",
+      "description": "Para aplicações de médio porte com necessidades específicas",
+      "feature1": "Monitoramento 24x7",
+      "feature2": "Suporte via chat e telefone",
+      "feature3": "Atualizações semanais",
+      "feature4": "Backup diário",
+      "feature5": "SLA de 2 dias úteis",
+      "feature6": "Relatórios gerenciais"
+    },
+    "premium": {
+      "name": "Premium",
+      "description": "Solução completa para aplicações críticas e de alto volume",
+      "feature1": "Monitoramento proativo 24x7",
+      "feature2": "Suporte dedicado",
+      "feature3": "Atualizações sob demanda",
+      "feature4": "Backup contínuo",
+      "feature5": "SLA de 4 horas",
+      "feature6": "Análise preditiva",
+      "feature7": "Gestor dedicado"
+    }
+  },
+  "contact": {
+    "title": "Pronto para Começar?",
+    "description": "Entre em contato conosco para discutir sua proposta personalizada e dar o próximo passo na evolução tecnológica da sua empresa."
+  },
+  "differentials": {
+    "title": "Diferenciais Competitivos",
+    "item1": {
+      "title": "5+ Anos de Experiência",
+      "description": "Mais de 5 anos de experiência global em sustentação e desenvolvimento de sistemas complexos"
+    },
+    "item2": {
+      "title": "Cultura de Inovação",
+      "description": "Sempre atentos às últimas tendências tecnológicas e aprendizado contínuo"
+    },
+    "item3": {
+      "title": "Soluções Escaláveis",
+      "description": "Desenvolvemos aplicações web e móveis que potencializam empresas e resultados"
+    },
+    "item4": {
+      "title": "Foco no Cliente",
+      "description": "Priorizamos a saúde financeira e operacional do cliente em cada projeto"
+    },
+    "item5": {
+      "title": "Entrega Garantida",
+      "description": "Comprometimento com prazos e qualidade em todas as entregas"
+    },
+    "item6": {
+      "title": "Suporte Remoto Eficiente",
+      "description": "Atendimento remoto comprovado desde 2020 com experiência internacional"
+    }
+  },
+  "sla": {
+    "title": "SLA – Acordo de Nível de Serviço",
+    "subtitle": "Nossos tempos de resposta são estabelecidos com base na criticidade do incidente, garantindo priorização adequada e resolução eficiente.",
+    "severity": "Severidade",
+    "response": "Início do Atendimento",
+    "critical": "Crítica",
+    "high": "Alta",
+    "medium": "Média",
+    "low": "Baixa",
+    "criticalTime": "até 4 horas",
+    "highTime": "até o próximo dia útil",
+    "mediumTime": "até 2 dias úteis",
+    "lowTime": "até 3 dias úteis",
+    "notes": "Observações:",
+    "note1": "Os prazos são contabilizados em horário comercial (8h às 18h, segunda a sexta)",
+    "note2": "Incidentes críticos possuem atendimento 24x7",
+    "note3": "SLA é suspenso mediante indisponibilidade de recursos do cliente"
+  },
+  "team": {
+    "title": "Time Técnico",
+    "subtitle": "Nossa equipe multidisciplinar é composta por profissionais experientes e certificados, alocados conforme a necessidade e complexidade do projeto.",
+    "role1": {
+      "title": "Product Owner",
+      "description": "Responsável pela visão do produto e priorização do backlog"
+    },
+    "role2": {
+      "title": "Scrum Master",
+      "description": "Facilitador do processo ágil e removedor de impedimentos"
+    },
+    "role3": {
+      "title": "Desenvolvedor Senior",
+      "description": "Desenvolvimento de soluções e arquitetura de software"
+    },
+    "role4": {
+      "title": "Desenvolvedor Pleno",
+      "description": "Implementação de funcionalidades e manutenções"
+    },
+    "role5": {
+      "title": "Analista de Dados",
+      "description": "Modelagem, análise e otimização de bases de dados"
+    },
+    "role6": {
+      "title": "Especialista em Segurança",
+      "description": "Auditoria de segurança e implementação de boas práticas"
+    },
+    "role7": {
+      "title": "DevOps Engineer",
+      "description": "Automação, CI/CD e gestão de infraestrutura"
+    },
+    "role8": {
+      "title": "QA/Tester",
+      "description": "Garantia de qualidade e testes automatizados"
+    },
+    "note": "A composição da equipe pode ser ajustada conforme o escopo específico do projeto e as necessidades técnicas identificadas durante a análise inicial."
+  },
+  "header": {
+    "tagline": "Transformando ideias em soluções tecnológicas!",
+    "whatsapp": "Whatsapp"
+  },
+  "footer": {
+    "termsTitle": "Termos e Definições",
+    "slaTitle": "SLA",
+    "slaDescription": "Service Level Agreement - Acordo que define os níveis de serviço esperados entre fornecedor e cliente.",
+    "hypercareTitle": "Hypercare",
+    "hypercareDescription": "Período de suporte intensivo pós-implementação para garantir estabilidade e performance otimizadas.",
+    "improvementsTitle": "Pequenas Melhorias",
+    "improvementsDescription": "Modificações de baixa complexidade que não alteram a arquitetura principal do sistema.",
+    "confidentialityTitle": "Confidencialidade",
+    "confidentialityText": "Todas as informações compartilhadas durante o desenvolvimento desta proposta e execução dos serviços serão tratadas com absoluto sigilo. A MZ1 ART se compromete a manter a confidencialidade de dados, processos e informações estratégicas do cliente, conforme termo de confidencialidade específico a ser firmado.",
+    "companyName": "MZ1 ART Soluções em Tecnologia",
+    "companyTagline": "Transformando ideias em soluções tecnológicas",
+    "copyright": "© 2025 MZ1 ART. Todos os direitos reservados.",
+    "location": "Curitiba, PR - Brasil | Remoto"
+  }
+}

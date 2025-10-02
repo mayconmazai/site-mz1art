@@ -1,7 +1,9 @@
 import { motion } from 'motion/react'
 import { Shield, FileText, Eye } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 
 export default function Footer() {
+  const { t } = useTranslation()
   return (
     <footer className="bg-gradient-to-r from-indigo-900 to-purple-900 text-white py-16">
       <div className="container mx-auto px-4">
@@ -15,7 +17,7 @@ export default function Footer() {
           {/* Termos e Definições */}
           <div className="mb-12">
             <h3 className="text-2xl font-bold mb-6 text-center text-purple-300">
-              Termos e Definições
+              {t('footer.termsTitle')}
             </h3>
             
             <div className="grid md:grid-cols-3 gap-8">
@@ -23,10 +25,9 @@ export default function Footer() {
                 <div className="inline-flex p-3 bg-blue-600 rounded-lg mb-4">
                   <Shield className="w-6 h-6" />
                 </div>
-                <h4 className="font-semibold mb-2">SLA</h4>
+                <h4 className="font-semibold mb-2">{t('footer.slaTitle')}</h4>
                 <p className="text-sm text-gray-300">
-                  Service Level Agreement - Acordo que define os níveis de 
-                  serviço esperados entre fornecedor e cliente.
+                  {t('footer.slaDescription')}
                 </p>
               </div>
               
@@ -34,10 +35,9 @@ export default function Footer() {
                 <div className="inline-flex p-3 bg-green-600 rounded-lg mb-4">
                   <FileText className="w-6 h-6" />
                 </div>
-                <h4 className="font-semibold mb-2">Hypercare</h4>
+                <h4 className="font-semibold mb-2">{t('footer.hypercareTitle')}</h4>
                 <p className="text-sm text-gray-300">
-                  Período de suporte intensivo pós-implementação para 
-                  garantir estabilidade e performance otimizadas.
+                  {t('footer.hypercareDescription')}
                 </p>
               </div>
               
@@ -45,10 +45,9 @@ export default function Footer() {
                 <div className="inline-flex p-3 bg-purple-600 rounded-lg mb-4">
                   <Eye className="w-6 h-6" />
                 </div>
-                <h4 className="font-semibold mb-2">Pequenas Melhorias</h4>
+                <h4 className="font-semibold mb-2">{t('footer.improvementsTitle')}</h4>
                 <p className="text-sm text-gray-300">
-                  Modificações de baixa complexidade que não alteram 
-                  a arquitetura principal do sistema.
+                  {t('footer.improvementsDescription')}
                 </p>
               </div>
             </div>
@@ -57,14 +56,10 @@ export default function Footer() {
           {/* Confidencialidade */}
           <div className="bg-gradient-to-r from-indigo-800 to-purple-800 p-8 rounded-lg mb-8">
             <h3 className="text-xl font-bold mb-4 text-center text-purple-300">
-              Confidencialidade
+              {t('footer.confidentialityTitle')}
             </h3>
             <p className="text-sm text-gray-300 leading-relaxed text-center">
-              Todas as informações compartilhadas durante o desenvolvimento desta 
-              proposta e execução dos serviços serão tratadas com absoluto sigilo. 
-              A MZ1 ART se compromete a manter a confidencialidade de dados, 
-              processos e informações estratégicas do cliente, conforme termo 
-              de confidencialidade específico a ser firmado.
+              {t('footer.confidentialityText')}
             </p>
           </div>
 
@@ -72,15 +67,15 @@ export default function Footer() {
           <div className="border-t border-purple-700 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
               <div className="text-center md:text-left">
-                <h4 className="font-bold text-purple-300">MZ1 ART Soluções em Tecnologia</h4>
+                <h4 className="font-bold text-purple-300">{t('footer.companyName')}</h4>
                 <p className="text-sm text-gray-400">
-                  Transformando ideias em soluções tecnológicas
+                  {t('footer.companyTagline')}
                 </p>
               </div>
               
               <div className="text-center md:text-right text-sm text-gray-400">
-                <p>&copy; 2025 MZ1 ART. Todos os direitos reservados.</p>
-                <p>Curitiba, PR - Brasil | Remoto</p>
+                <p>{t('footer.copyright')}</p>
+                <p>{t('footer.location')}</p>
               </div>
             </div>
           </div>

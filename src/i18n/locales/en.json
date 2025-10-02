@@ -1,0 +1,249 @@
+{
+  "nav": {
+    "home": "Home",
+    "howItWorks": "How It Works",
+    "services": "Services",
+    "whyUs": "Why MZ1?",
+    "plans": "Plans",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "cta": "Talk to a Specialist"
+  },
+  "hero": {
+    "title1": "We Take Care of",
+    "title2": "Technology",
+    "title3": "for Your Business.",
+    "title4": "You Focus on Growth.",
+    "subtitle": "From digital marketing to AI-powered apps, we're the partner that",
+    "subtitleBold": " businesses of all sizes ",
+    "subtitleEnd": "trust to scale without headaches.",
+    "proof1": "50+ projects delivered",
+    "proof2": "Global support (PT, EN, ES)",
+    "proof3": "99.9% uptime"
+  },
+  "howItWorks": {
+    "title": "How It Works?",
+    "subtitle": "A simple and transparent process, from first contact to your project's success",
+    "step1": {
+      "title": "Free Diagnosis",
+      "description": "30-minute conversation to understand your challenges and goals",
+      "time": "30 minutes"
+    },
+    "step2": {
+      "title": "Custom Proposal",
+      "description": "Receive a detailed plan with scope, timelines and investment",
+      "time": "48 hours"
+    },
+    "step3": {
+      "title": "Fast Implementation",
+      "description": "We start working immediately, with weekly deliveries",
+      "time": "From 7 days"
+    },
+    "step4": {
+      "title": "Continuous Support",
+      "description": "24/7 monitoring to ensure everything works perfectly",
+      "time": "Always available"
+    },
+    "ctaTitle": "Ready to start your digital transformation?",
+    "ctaButton1": "Schedule Free Diagnosis",
+    "ctaButton2": "WhatsApp Chat"
+  },
+  "services": {
+    "title": "How We Take Care of Your Business",
+    "subtitle": "Complete solutions for every stage of your digital journey",
+    "service1": {
+      "subtitle": "Application Development",
+      "title": "Apps That Sell More",
+      "description": "Turn your ideas into apps and web systems your customers love to use. We deliver on time, no surprises.",
+      "benefit": "Increase sales and reduce operational costs"
+    },
+    "service2": {
+      "subtitle": "Artificial Intelligence",
+      "title": "Smart Automation with AI",
+      "description": "Automate repetitive tasks and gain powerful insights with AI. Your team focuses on what really matters.",
+      "benefit": "Save up to 40% of your team's time"
+    },
+    "service3": {
+      "subtitle": "Digital Marketing & Social Media",
+      "title": "Marketing That Converts",
+      "description": "From corporate websites to social media campaigns. We create content that attracts and converts customers.",
+      "benefit": "More qualified leads for your business"
+    },
+    "service4": {
+      "subtitle": "24/7 Support & Maintenance",
+      "title": "Your System Always Online",
+      "description": "Sleep peacefully. We handle everything: bugs, updates, security and performance. You won't even notice we're there.",
+      "benefit": "99.9% guaranteed uptime"
+    },
+    "service5": {
+      "subtitle": "Cloud & DevOps",
+      "title": "Infrastructure That Scales",
+      "description": "Your infrastructure grows with your business. No crashes, no slowdowns, no headaches.",
+      "benefit": "Pay only for what you use, save up to 60%"
+    },
+    "service6": {
+      "subtitle": "CTO as a Service",
+      "title": "CTO On Demand",
+      "description": "Have an experienced tech leader without the cost of hiring an executive. Strategic decisions, no mistakes.",
+      "benefit": "Save $6k+/month vs hiring full-time"
+    },
+    "service7": {
+      "subtitle": "Database Management",
+      "title": "Organized and Secure Data",
+      "description": "We optimize your data for maximum performance. Fast queries, automatic backups, zero loss.",
+      "benefit": "Queries up to 10x faster"
+    },
+    "service8": {
+      "subtitle": "International Expansion",
+      "title": "Conquer the Global Market",
+      "description": "We take your business to USA and Canada. Localized marketing, fluent communication, qualified leads.",
+      "benefit": "Access to markets 5x larger"
+    },
+    "service9": {
+      "subtitle": "Consulting & Optimization",
+      "title": "Processes That Work",
+      "description": "We identify bottlenecks, create efficient processes and document everything. Your operation runs itself.",
+      "benefit": "Reduce rework by up to 70%"
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know before getting started",
+    "q1": {
+      "question": "How much does it cost to start?",
+      "answer": "Our projects start from $150 for basic solutions. The final investment depends on scope, complexity and deadlines. We offer free diagnosis to understand your needs and create a personalized proposal with clear ROI."
+    },
+    "q2": {
+      "question": "How long does it take to see results?",
+      "answer": "Simple projects can be live in 7-15 days. More complex projects take 1 to 3 months. We work with weekly deliveries (sprints), so you see constant progress and can adjust course at any time."
+    },
+    "q3": {
+      "question": "What size companies do you serve?",
+      "answer": "We serve from startups and small businesses to established companies. Our approach adapts to your moment: if you're starting, we focus on MVP and validation. If you're already growing, we focus on scale and automation."
+    },
+    "ctaTitle": "Still have questions? Talk to us! We respond within 2 hours."
+  },
+  "common": {
+    "step": "Step",
+    "loading": "Loading...",
+    "sendEmail": "Send Email",
+    "whatsappChat": "WhatsApp Chat",
+    "note": "Note"
+  },
+  "whyUs": {
+    "title": "Why MZ1?",
+    "reason1": {
+      "title": "Focus on Financial and Operational Health",
+      "description": "Strategic solutions that drive sustainable business success with concrete results."
+    },
+    "reason2": {
+      "title": "Proven Remote Support",
+      "description": "Efficient and high-quality remote service, established since 2020."
+    },
+    "reason3": {
+      "title": "Global Expertise",
+      "description": "Proven capability in international projects with fluent communication in multiple languages."
+    },
+    "reason4": {
+      "title": "Innovation and Continuous Learning",
+      "description": "We adopt the latest technologies and market practices to keep your company ahead."
+    },
+    "ctaText": "Get in touch and let's build your company's future together."
+  },
+  "plans": {
+    "title": "Service Plans",
+    "basic": {
+      "name": "Basic",
+      "description": "Ideal for small applications with low transaction volume",
+      "feature1": "Basic monitoring 8x5",
+      "feature2": "Ticket support",
+      "feature3": "Monthly updates",
+      "feature4": "Weekly backup",
+      "feature5": "3 business days SLA"
+    },
+    "advanced": {
+      "name": "Advanced",
+      "description": "For mid-sized applications with specific needs",
+      "feature1": "24x7 monitoring",
+      "feature2": "Chat and phone support",
+      "feature3": "Weekly updates",
+      "feature4": "Daily backup",
+      "feature5": "2 business days SLA",
+      "feature6": "Management reports"
+    },
+    "premium": {
+      "name": "Premium",
+      "description": "Complete solution for critical and high-volume applications",
+      "feature1": "Proactive 24x7 monitoring",
+      "feature2": "Dedicated support",
+      "feature3": "On-demand updates",
+      "feature4": "Continuous backup",
+      "feature5": "4 hours SLA",
+      "feature6": "Predictive analysis",
+      "feature7": "Dedicated manager"
+    }
+  },
+  "contact": {
+    "title": "Ready to Get Started?",
+    "description": "Contact us to discuss your personalized proposal and take the next step in your company's technological evolution."
+  },
+  "differentials": {
+    "title": "Competitive Advantages",
+    "item1": { "title": "5+ Years of Experience", "description": "Over 5 years of global experience in support and development of complex systems" },
+    "item2": { "title": "Innovation Culture", "description": "Always attentive to the latest technological trends and continuous learning" },
+    "item3": { "title": "Scalable Solutions", "description": "We develop web and mobile applications that empower companies and results" },
+    "item4": { "title": "Client Focus", "description": "We prioritize the client's financial and operational health in every project" },
+    "item5": { "title": "Guaranteed Delivery", "description": "Commitment to deadlines and quality in all deliveries" },
+    "item6": { "title": "Efficient Remote Support", "description": "Proven remote service since 2020 with international experience" }
+  },
+  "sla": {
+    "title": "SLA – Service Level Agreement",
+    "subtitle": "Our response times are established based on incident criticality, ensuring proper prioritization and efficient resolution.",
+    "severity": "Severity",
+    "response": "Response Time",
+    "critical": "Critical",
+    "high": "High",
+    "medium": "Medium",
+    "low": "Low",
+    "criticalTime": "up to 4 hours",
+    "highTime": "next business day",
+    "mediumTime": "up to 2 business days",
+    "lowTime": "up to 3 business days",
+    "notes": "Notes:",
+    "note1": "Deadlines are counted during business hours (8am to 6pm, Monday to Friday)",
+    "note2": "Critical incidents have 24x7 support",
+    "note3": "SLA is suspended due to unavailability of client resources"
+  },
+  "team": {
+    "title": "Technical Team",
+    "subtitle": "Our multidisciplinary team consists of experienced and certified professionals, allocated according to project needs and complexity.",
+    "role1": { "title": "Product Owner", "description": "Responsible for product vision and backlog prioritization" },
+    "role2": { "title": "Scrum Master", "description": "Agile process facilitator and impediment remover" },
+    "role3": { "title": "Senior Developer", "description": "Solutions development and software architecture" },
+    "role4": { "title": "Mid-level Developer", "description": "Feature implementation and maintenance" },
+    "role5": { "title": "Data Analyst", "description": "Modeling, analysis and database optimization" },
+    "role6": { "title": "Security Specialist", "description": "Security auditing and best practices implementation" },
+    "role7": { "title": "DevOps Engineer", "description": "Automation, CI/CD and infrastructure management" },
+    "role8": { "title": "QA/Tester", "description": "Quality assurance and automated testing" },
+    "note": "Team composition can be adjusted according to specific project scope and technical needs identified during initial analysis."
+  },
+  "header": {
+    "tagline": "Transforming ideas into technological solutions!",
+    "whatsapp": "WhatsApp"
+  },
+  "footer": {
+    "termsTitle": "Terms and Definitions",
+    "slaTitle": "SLA",
+    "slaDescription": "Service Level Agreement - Agreement that defines expected service levels between provider and client.",
+    "hypercareTitle": "Hypercare",
+    "hypercareDescription": "Intensive post-implementation support period to ensure stability and optimized performance.",
+    "improvementsTitle": "Small Improvements",
+    "improvementsDescription": "Low complexity modifications that do not alter the main system architecture.",
+    "confidentialityTitle": "Confidentiality",
+    "confidentialityText": "All information shared during the development of this proposal and execution of services will be treated with absolute confidentiality. MZ1 ART commits to maintaining the confidentiality of data, processes and strategic information of the client, according to a specific confidentiality agreement to be signed.",
+    "companyName": "MZ1 ART Technology Solutions",
+    "companyTagline": "Transforming ideas into technological solutions",
+    "copyright": "© 2025 MZ1 ART. All rights reserved.",
+    "location": "Curitiba, PR - Brazil | Remote"
+  }
+}

@@ -1,38 +1,40 @@
 import { motion } from 'motion/react'
 import { AlertTriangle, Clock, Zap, AlertCircle } from 'lucide-react'
-
-const slaData = [
-  {
-    severidade: "Crítica",
-    icon: <AlertCircle className="w-5 h-5 text-red-500" />,
-    atendimento: "até 4 horas",
-    bgColor: "bg-red-50",
-    borderColor: "border-red-200"
-  },
-  {
-    severidade: "Alta",
-    icon: <AlertTriangle className="w-5 h-5 text-orange-500" />,
-    atendimento: "até o próximo dia útil",
-    bgColor: "bg-orange-50",
-    borderColor: "border-orange-200"
-  },
-  {
-    severidade: "Média",
-    icon: <Clock className="w-5 h-5 text-yellow-500" />,
-    atendimento: "até 2 dias úteis",
-    bgColor: "bg-yellow-50",
-    borderColor: "border-yellow-200"
-  },
-  {
-    severidade: "Baixa",
-    icon: <Zap className="w-5 h-5 text-green-500" />,
-    atendimento: "até 3 dias úteis",
-    bgColor: "bg-green-50",
-    borderColor: "border-green-200"
-  }
-]
+import { useTranslation } from 'react-i18next'
 
 export default function SLA() {
+  const { t } = useTranslation()
+
+  const slaData = [
+    {
+      severidade: t('sla.critical'),
+      icon: <AlertCircle className="w-5 h-5 text-red-500" />,
+      atendimento: t('sla.criticalTime'),
+      bgColor: "bg-red-50",
+      borderColor: "border-red-200"
+    },
+    {
+      severidade: t('sla.high'),
+      icon: <AlertTriangle className="w-5 h-5 text-orange-500" />,
+      atendimento: t('sla.highTime'),
+      bgColor: "bg-orange-50",
+      borderColor: "border-orange-200"
+    },
+    {
+      severidade: t('sla.medium'),
+      icon: <Clock className="w-5 h-5 text-yellow-500" />,
+      atendimento: t('sla.mediumTime'),
+      bgColor: "bg-yellow-50",
+      borderColor: "border-yellow-200"
+    },
+    {
+      severidade: t('sla.low'),
+      icon: <Zap className="w-5 h-5 text-green-500" />,
+      atendimento: t('sla.lowTime'),
+      bgColor: "bg-green-50",
+      borderColor: "border-green-200"
+    }
+  ]
   return (
     <section id="sla" className="py-16 bg-white">
       <div className="container mx-auto px-4">
@@ -44,13 +46,12 @@ export default function SLA() {
           className="max-w-4xl mx-auto"
         >
           <h2 className="text-3xl font-bold text-center mb-8 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
-            SLA – Acordo de Nível de Serviço
+            {t('sla.title')}
           </h2>
           
           <div className="mb-8">
             <p className="text-lg text-gray-700 text-center max-w-3xl mx-auto">
-              Nossos tempos de resposta são estabelecidos com base na criticidade 
-              do incidente, garantindo priorização adequada e resolução eficiente.
+              {t('sla.subtitle')}
             </p>
           </div>
 
@@ -60,10 +61,10 @@ export default function SLA() {
                 <thead>
                   <tr className="border-b-2 border-gray-300">
                     <th className="text-left py-4 px-6 font-semibold text-gray-900">
-                      Severidade
+                      {t('sla.severity')}
                     </th>
                     <th className="text-left py-4 px-6 font-semibold text-gray-900">
-                      Início do Atendimento
+                      {t('sla.response')}
                     </th>
                   </tr>
                 </thead>
@@ -98,12 +99,12 @@ export default function SLA() {
 
             <div className="mt-6 text-sm text-gray-600">
               <p className="mb-2">
-                <strong>Observações:</strong>
+                <strong>{t('sla.notes')}</strong>
               </p>
               <ul className="list-disc list-inside space-y-1">
-                <li>Os prazos são contabilizados em horário comercial (8h às 18h, segunda a sexta)</li>
-                <li>Incidentes críticos possuem atendimento 24x7</li>
-                <li>SLA é suspenso mediante indisponibilidade de recursos do cliente</li>
+                <li>{t('sla.note1')}</li>
+                <li>{t('sla.note2')}</li>
+                <li>{t('sla.note3')}</li>
               </ul>
             </div>
           </div>

@@ -1,20 +1,23 @@
 import { useState, useEffect } from 'react'
 import { Menu, X } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
+import LanguageSwitcher from './LanguageSwitcher'
 import mz1FullLogo from 'figma:asset/4cea5d5db742e31f53138d858a7c1efaa3376a34.png'
 
-const navItems = [
-  { id: 'apresentacao', label: 'Início' },
-  { id: 'como-funciona', label: 'Como Funciona' },
-  { id: 'servicos', label: 'Serviços' },
-  { id: 'porque-mz1', label: 'Por que MZ1?' },
-  { id: 'planos', label: 'Planos' },
-  { id: 'faq', label: 'FAQ' },
-  { id: 'comercial', label: 'Contato' },
-]
-
 export default function Navigation() {
+  const { t } = useTranslation()
   const [isOpen, setIsOpen] = useState(false)
   const [activeSection, setActiveSection] = useState('apresentacao')
+
+  const navItems = [
+    { id: 'apresentacao', label: t('nav.home') },
+    { id: 'como-funciona', label: t('nav.howItWorks') },
+    { id: 'servicos', label: t('nav.services') },
+    { id: 'porque-mz1', label: t('nav.whyUs') },
+    { id: 'planos', label: t('nav.plans') },
+    { id: 'faq', label: t('nav.faq') },
+    { id: 'comercial', label: t('nav.contact') },
+  ]
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id)
@@ -51,7 +54,7 @@ export default function Navigation() {
     <nav className="sticky top-0 bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50" aria-label="Navegação principal">
       <div className="container mx-auto px-4">
         <div className="font-semibold flex items-center justify-between py-4">
-          <div className="lg:hidden">
+          <div className="lg:hidden flex items-center gap-2">
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="p-2 rounded-md hover:bg-gray-100"
@@ -87,6 +90,11 @@ export default function Navigation() {
                 </button>
               ))}
             </div>
+          </div>
+
+          {/* Language Switcher */}
+          <div className="flex items-center">
+            <LanguageSwitcher />
           </div>
         </div>
       </div>

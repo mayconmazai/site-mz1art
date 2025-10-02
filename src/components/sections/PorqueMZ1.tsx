@@ -1,32 +1,33 @@
 import { motion } from "motion/react";
 import { Heart, Wifi, Globe, Lightbulb } from "lucide-react";
-const razoes = [
-  {
-    icon: <Heart className="w-8 h-8 text-red-500" />,
-    title: "Foco na Saúde Financeira e Operacional",
-    description:
-      "Soluções estratégicas que impulsionam o sucesso sustentável do seu negócio com resultados concretos.",
-  },
-  {
-    icon: <Wifi className="w-8 h-8 text-blue-500" />,
-    title: "Suporte Remoto Comprovado",
-    description:
-      "Atendimento remoto eficiente e de alta qualidade, consolidado desde 2020.",
-  },
-  {
-    icon: <Globe className="w-8 h-8 text-green-500" />,
-    title: "Expertise Global",
-    description:
-      "Capacidade comprovada em projetos internacionais com comunicação fluida em múltiplos idiomas.",
-  },
-  {
-    icon: <Lightbulb className="w-8 h-8 text-yellow-500" />,
-    title: "Inovação e Aprendizado Contínuo",
-    description:
-      "Adotamos as mais recentes tecnologias e práticas do mercado para manter sua empresa à frente.",
-  },
-];
+import { useTranslation } from 'react-i18next';
+
 export default function PorqueMZ1() {
+  const { t } = useTranslation();
+
+  const razoes = [
+    {
+      icon: <Heart className="w-8 h-8 text-red-500" />,
+      title: t('whyUs.reason1.title'),
+      description: t('whyUs.reason1.description'),
+    },
+    {
+      icon: <Wifi className="w-8 h-8 text-blue-500" />,
+      title: t('whyUs.reason2.title'),
+      description: t('whyUs.reason2.description'),
+    },
+    {
+      icon: <Globe className="w-8 h-8 text-green-500" />,
+      title: t('whyUs.reason3.title'),
+      description: t('whyUs.reason3.description'),
+    },
+    {
+      icon: <Lightbulb className="w-8 h-8 text-yellow-500" />,
+      title: t('whyUs.reason4.title'),
+      description: t('whyUs.reason4.description'),
+    },
+  ];
+
   return (
     <section id="porque-mz1" className="py-16 bg-white">
       <div className="container mx-auto px-4">
@@ -38,7 +39,7 @@ export default function PorqueMZ1() {
           className="max-w-6xl mx-auto"
         >
           <h2 className="text-3xl font-bold text-center mb-12 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
-            Por que a MZ1?
+            {t('whyUs.title')}
           </h2>
 
           <div className="grid md:grid-cols-2 gap-8">
@@ -78,15 +79,14 @@ export default function PorqueMZ1() {
             className="mt-12 text-center bg-gradient-to-r from-indigo-600 to-purple-600 text-white p-8 rounded-lg"
           >
             <p className="text-xl font-medium mb-4">
-              Entre em contato e vamos construir juntos o futuro
-              da sua empresa.
+              {t('whyUs.ctaText')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="mailto:maycon.mazai@mz1art.com"
                 className="bg-white text-indigo-600 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors"
               >
-                Enviar E-mail
+                {t('common.sendEmail')}
               </a>
               <a
                 href="https://wa.me/5541991374732?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20MZ1%20ART."
@@ -94,7 +94,7 @@ export default function PorqueMZ1() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Chat no WhatsApp
+                {t('common.whatsappChat')}
               </a>
             </div>
           </motion.div>

@@ -1,9 +1,11 @@
 import { motion } from "motion/react";
 import { Mail, Phone } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
+import { useTranslation } from 'react-i18next';
 import mz1FullLogo from "figma:asset/4cea5d5db742e31f53138d858a7c1efaa3376a34.png";
 
 export default function Header() {
+  const { t } = useTranslation();
   return (
     <header className="bg-gradient-to-tr from-[#121EA8] to-[#BD31F5] text-white py-4 shadow-md">
       <div className="container mx-auto px-4">
@@ -28,7 +30,7 @@ export default function Header() {
             </div>
             <div className="text-center sm:text-left">
               <h1 className="text-2xl font-bold tracking-tight">
-                Transformando ideias em soluções tecnológicas!
+                {t('header.tagline')}
               </h1>
             </div>
           </div>
@@ -43,7 +45,7 @@ export default function Header() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Whatsapp
+                {t('header.whatsapp')}
               </a>
             </div>
             <div className="flex items-center gap-2">

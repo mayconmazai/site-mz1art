@@ -1,50 +1,52 @@
 import { motion } from 'motion/react'
 import { User, UserCheck, Code, Database, Shield, Settings } from 'lucide-react'
-
-const timeRoles = [
-  {
-    icon: <UserCheck className="w-6 h-6 text-blue-500" />,
-    role: "Product Owner",
-    description: "Responsável pela visão do produto e priorização do backlog"
-  },
-  {
-    icon: <User className="w-6 h-6 text-green-500" />,
-    role: "Scrum Master",
-    description: "Facilitador do processo ágil e removedor de impedimentos"
-  },
-  {
-    icon: <Code className="w-6 h-6 text-purple-500" />,
-    role: "Desenvolvedor Senior",
-    description: "Desenvolvimento de soluções e arquitetura de software"
-  },
-  {
-    icon: <Code className="w-6 h-6 text-indigo-500" />,
-    role: "Desenvolvedor Pleno",
-    description: "Implementação de funcionalidades e manutenções"
-  },
-  {
-    icon: <Database className="w-6 h-6 text-orange-500" />,
-    role: "Analista de Dados",
-    description: "Modelagem, análise e otimização de bases de dados"
-  },
-  {
-    icon: <Shield className="w-6 h-6 text-red-500" />,
-    role: "Especialista em Segurança",
-    description: "Auditoria de segurança e implementação de boas práticas"
-  },
-  {
-    icon: <Settings className="w-6 h-6 text-gray-500" />,
-    role: "DevOps Engineer",
-    description: "Automação, CI/CD e gestão de infraestrutura"
-  },
-  {
-    icon: <User className="w-6 h-6 text-teal-500" />,
-    role: "QA/Tester",
-    description: "Garantia de qualidade e testes automatizados"
-  }
-]
+import { useTranslation } from 'react-i18next'
 
 export default function TimeTecnico() {
+  const { t } = useTranslation()
+
+  const timeRoles = [
+    {
+      icon: <UserCheck className="w-6 h-6 text-blue-500" />,
+      role: t('team.role1.title'),
+      description: t('team.role1.description')
+    },
+    {
+      icon: <User className="w-6 h-6 text-green-500" />,
+      role: t('team.role2.title'),
+      description: t('team.role2.description')
+    },
+    {
+      icon: <Code className="w-6 h-6 text-purple-500" />,
+      role: t('team.role3.title'),
+      description: t('team.role3.description')
+    },
+    {
+      icon: <Code className="w-6 h-6 text-indigo-500" />,
+      role: t('team.role4.title'),
+      description: t('team.role4.description')
+    },
+    {
+      icon: <Database className="w-6 h-6 text-orange-500" />,
+      role: t('team.role5.title'),
+      description: t('team.role5.description')
+    },
+    {
+      icon: <Shield className="w-6 h-6 text-red-500" />,
+      role: t('team.role6.title'),
+      description: t('team.role6.description')
+    },
+    {
+      icon: <Settings className="w-6 h-6 text-gray-500" />,
+      role: t('team.role7.title'),
+      description: t('team.role7.description')
+    },
+    {
+      icon: <User className="w-6 h-6 text-teal-500" />,
+      role: t('team.role8.title'),
+      description: t('team.role8.description')
+    }
+  ]
   return (
     <section id="time" className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
@@ -56,14 +58,12 @@ export default function TimeTecnico() {
           className="max-w-6xl mx-auto"
         >
           <h2 className="text-3xl font-bold text-center mb-8 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
-            Time Técnico
+            {t('team.title')}
           </h2>
           
           <div className="mb-8">
             <p className="text-lg text-gray-700 text-center max-w-3xl mx-auto">
-              Nossa equipe multidisciplinar é composta por profissionais 
-              experientes e certificados, alocados conforme a necessidade 
-              e complexidade do projeto.
+              {t('team.subtitle')}
             </p>
           </div>
 
@@ -94,9 +94,7 @@ export default function TimeTecnico() {
 
           <div className="mt-8 bg-blue-50 p-6 rounded-lg">
             <p className="text-center text-gray-700">
-              <strong>Nota:</strong> A composição da equipe pode ser ajustada 
-              conforme o escopo específico do projeto e as necessidades técnicas 
-              identificadas durante a análise inicial.
+              <strong>{t('common.note')}:</strong> {t('team.note')}
             </p>
           </div>
         </motion.div>
