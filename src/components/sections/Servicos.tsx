@@ -67,6 +67,7 @@ export default function Servicos() {
       icon: <FileText className="w-8 h-8 text-orange-600" />,
       title: t('services.service9.title'),
       subtitle: t('services.service9.subtitle'),
+      description: t('services.service9.description'),
       beneficio: t('services.service9.benefit')
     }
   ]
@@ -100,7 +101,7 @@ export default function Servicos() {
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0, delay: index * 0 }}
+                transition={{ duration: 0.6, delay: index * 0.2 }}
                 viewport={{ once: true }}
                 whileHover={{ y: -5, transition: { duration: 0.2 } }}
                 className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-sm hover:shadow-xl transition-all border border-gray-100 dark:border-gray-700 group"
