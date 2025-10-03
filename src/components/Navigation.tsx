@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { Menu, X } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import LanguageSwitcher from './LanguageSwitcher'
-import mz1FullLogo from 'figma:asset/4cea5d5db742e31f53138d858a7c1efaa3376a34.png'
+import React from 'react'
 
 export default function Navigation() {
   const { t } = useTranslation()
