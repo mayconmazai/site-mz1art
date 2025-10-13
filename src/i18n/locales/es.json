@@ -245,5 +245,32 @@
     "companyTagline": "Transformando ideas en soluciones tecnológicas",
     "copyright": "© 2025 MZ1 ART. Todos los derechos reservados.",
     "location": "Vancouver, BC - Canada | Remoto"
+  },
+  "auth": {
+    "login": "Iniciar sesión",
+    "logout": "Cerrar sesión",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "forgotPassword": "Olvidé mi contraseña",
+    "resetPassword": "Restablecer contraseña",
+    "backToLogin": "Volver al inicio de sesión",
+    "loginTitle": "Área del Cliente",
+    "loginSubtitle": "Accede a tu cuenta para gestionar tus proyectos",
+    "forgotPasswordTitle": "Recuperar Contraseña",
+    "forgotPasswordSubtitle": "Ingresa tu correo para recibir instrucciones de recuperación",
+    "sendResetLink": "Enviar enlace de recuperación",
+    "loginButton": "Iniciar sesión",
+    "loggingIn": "Iniciando sesión...",
+    "sendingEmail": "Enviando...",
+    "emailSent": "¡Correo enviado!",
+    "checkInbox": "Revisa tu bandeja de entrada para restablecer tu contraseña",
+    "invalidCredentials": "Correo o contraseña inválidos",
+    "errorOccurred": "Ocurrió un error. Inténtalo de nuevo.",
+    "emailRequired": "El correo es obligatorio",
+    "passwordRequired": "La contraseña es obligatoria",
+    "invalidEmail": "Correo inválido",
+    "welcome": "Bienvenido",
+    "dashboard": "Panel",
+    "myAccount": "Mi Cuenta"
   }
 }

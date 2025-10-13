@@ -287,5 +287,32 @@
     "companyTagline": "Transformando ideias em soluções tecnológicas",
     "copyright": "© 2025 MZ1 ART. Todos os direitos reservados.",
     "location": "Curitiba, PR - Brasil | Remoto"
+  },
+  "auth": {
+    "login": "Entrar",
+    "logout": "Sair",
+    "email": "E-mail",
+    "password": "Senha",
+    "forgotPassword": "Esqueci minha senha",
+    "resetPassword": "Redefinir senha",
+    "backToLogin": "Voltar ao login",
+    "loginTitle": "Área do Cliente",
+    "loginSubtitle": "Acesse sua conta para gerenciar seus projetos",
+    "forgotPasswordTitle": "Recuperar Senha",
+    "forgotPasswordSubtitle": "Digite seu e-mail para receber instruções de recuperação",
+    "sendResetLink": "Enviar link de recuperação",
+    "loginButton": "Entrar na conta",
+    "loggingIn": "Entrando...",
+    "sendingEmail": "Enviando...",
+    "emailSent": "E-mail enviado!",
+    "checkInbox": "Verifique sua caixa de entrada para redefinir sua senha",
+    "invalidCredentials": "E-mail ou senha inválidos",
+    "errorOccurred": "Ocorreu um erro. Tente novamente.",
+    "emailRequired": "E-mail é obrigatório",
+    "passwordRequired": "Senha é obrigatória",
+    "invalidEmail": "E-mail inválido",
+    "welcome": "Bem-vindo",
+    "dashboard": "Dashboard",
+    "myAccount": "Minha Conta"
   }
 }
