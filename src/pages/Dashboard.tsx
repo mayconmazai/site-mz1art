@@ -1,19 +1,21 @@
-import React from 'react'
-import { useAuth } from '../contexts/AuthContext'
-import { useTranslation } from 'react-i18next'
-import { useNavigate } from 'react-router-dom'
-import { LogOut, User } from 'lucide-react'
-import { motion } from 'motion/react'
+import React, { useState } from 'react';
+import { useAuth } from '../contexts/AuthContext';
+import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom';
+import { LogOut, User, Search } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
+import CpfLookup from '../components/cpf/CpfLookup';
 
 export default function Dashboard() {
-  const { t } = useTranslation()
-  const { user, signOut } = useAuth()
-  const navigate = useNavigate()
+  const { t } = useTranslation();
+  const { user, signOut } = useAuth();
+  const navigate = useNavigate();
+  const [showCpfLookup, setShowCpfLookup] = useState(false);
 
   const handleLogout = async () => {
-    await signOut()
-    navigate('/')
-  }
+    await signOut();
+    navigate('/');
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
@@ -67,28 +69,42 @@ export default function Dashboard() {
             </div>
 
             <div className="border-t border-gray-200 dark:border-gray-700 pt-6">
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
-                Área do Cliente
-              </h3>
-              <p className="text-gray-600 dark:text-gray-400">
-                Bem-vindo à sua área exclusiva! Em breve você terá acesso a:
+              <div className="flex justify-between items-center mb-4">
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                  Área do Cliente
+                </h3>
+                <button
+                  onClick={() => setShowCpfLookup(!showCpfLookup)}
+                  className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg hover:from-indigo-700 hover:to-purple-700 transition-colors text-sm font-medium"
+                >
+                  <Search className="w-4 h-4" />
+                  {showCpfLookup ? 'Fechar Consulta' : 'Consultar CPF'}
+                </button>
+              </div>
+              
+              <AnimatePresence>
+                {showCpfLookup && (
+                  <motion.div
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: 1, height: 'auto' }}
+                    exit={{ opacity: 0, height: 0 }}
+                    transition={{ duration: 0.3 }}
+                    className="overflow-hidden"
+                  >
+                    <div className="mt-4 p-4 bg-gray-50 dark:bg-gray-700/50 rounded-lg">
+                      <CpfLookup />
+                    </div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+
+              <p className="text-gray-600 dark:text-gray-400 mt-4">
+                {!showCpfLookup && 'Bem-vindo à sua área exclusiva! Aqui você pode:'}
               </p>
               <ul className="mt-4 space-y-2 text-gray-600 dark:text-gray-400">
                 <li className="flex items-center gap-2">
                   <span className="w-2 h-2 bg-indigo-600 rounded-full"></span>
-                  Gerenciamento de projetos
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 bg-indigo-600 rounded-full"></span>
-                  Histórico de serviços
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 bg-indigo-600 rounded-full"></span>
-                  Suporte técnico
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 bg-indigo-600 rounded-full"></span>
-                  Documentação e recursos
+                  Consultar CPF
                 </li>
               </ul>
             </div>
@@ -117,5 +133,5 @@ export default function Dashboard() {
         </motion.div>
       </main>
     </div>
-  )
+  );
 }
