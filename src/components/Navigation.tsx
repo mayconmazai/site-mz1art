@@ -126,7 +126,8 @@ export default function Navigation() {
                 onClick={() => setShowLoginModal(true)}
                 className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg hover:from-indigo-700 hover:to-purple-700 transition-all text-sm font-medium"
               >
-                <LogIn size={16} />
+                <span className="sm:hidden">Login</span>
+                <LogIn size={16} className='login' />
                 <span className="hidden sm:inline">{t('auth.login')}</span>
               </button>
             )}

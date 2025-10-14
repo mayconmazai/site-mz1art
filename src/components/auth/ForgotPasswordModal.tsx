@@ -42,21 +42,13 @@ export default function ForgotPasswordModal({ onClose, onSwitchToLogin }: Forgot
 
   return (
     <div>
-      {/* Logo */}
-      <div className="flex justify-center mb-4">
-        <img
-          src="/header-logo.png"
-          alt="MZ1 ART Logo"
-          className="h-12 w-auto"
-        />
-      </div>
-
+      <br />
       {/* Title */}
-      <div className="text-center mb-4">
-        <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-1">
+      <div className="text-center mb-6">
+        <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-1">
           {t('auth.forgotPasswordTitle')}
         </h2>
-        <p className="text-xs text-gray-600 dark:text-gray-400">
+        <p className="text-sm text-gray-600 dark:text-gray-400">
           {t('auth.forgotPasswordSubtitle')}
         </p>
       </div>
@@ -98,28 +90,27 @@ export default function ForgotPasswordModal({ onClose, onSwitchToLogin }: Forgot
           <div>
             <label
               htmlFor="email"
-              className="block text-xs font-medium text-gray-700 dark:text-gray-300 mb-1"
+              className="pl-2 block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
             >
               {t('auth.email')}
             </label>
             <div className="relative">
-              <Mail className="absolute left-2.5 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" />
               <input
                 id="email"
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full pl-9 pr-3 py-2 text-sm border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent dark:bg-gray-700 dark:text-white transition-colors"
-                placeholder="seu@email.com"
+              className="w-full pl-10 pr-3 py-3 text-base border border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-transparent dark:bg-gray-700 dark:text-white transition-colors pl-4"
+              placeholder='mail@mail.com'
                 disabled={loading}
               />
             </div>
           </div>
-
+          <br />
           <button
             type="submit"
             disabled={loading}
-            className="w-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-2 rounded-lg font-semibold text-sm hover:from-indigo-700 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed transition-all"
+            className="w-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-6 rounded-xl font-semibold text-sm hover:from-indigo-700 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed transition-all"
           >
             {loading ? t('auth.sendingEmail') : t('auth.sendResetLink')}
           </button>

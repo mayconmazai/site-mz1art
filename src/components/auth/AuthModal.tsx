@@ -1,79 +1,72 @@
-import React, { useEffect } from 'react'
-import { X } from 'lucide-react'
-import { motion, AnimatePresence } from 'motion/react'
+import React, { useEffect } from 'react';
+import { X } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 interface AuthModalProps {
-  isOpen: boolean
-  onClose: () => void
-  children: React.ReactNode
+  isOpen: boolean;
+  onClose: () => void;
+  children: React.ReactNode;
 }
 
-export default function AuthModal({ isOpen, onClose, children }: AuthModalProps) {
-  // Bloquear scroll do body quando modal está aberto
+const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, children }) => {
   useEffect(() => {
     if (isOpen) {
-      document.body.style.overflow = 'hidden'
-    } else {
-      document.body.style.overflow = 'unset'
+      document.body.style.overflow = 'hidden';
     }
     return () => {
-      document.body.style.overflow = 'unset'
-    }
-  }, [isOpen])
+      document.body.style.overflow = 'unset';
+    };
+  }, [isOpen]);
 
-  // Fechar com ESC
   useEffect(() => {
     const handleEsc = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') onClose()
-    }
-    if (isOpen) {
-      window.addEventListener('keydown', handleEsc)
-    }
-    return () => window.removeEventListener('keydown', handleEsc)
-  }, [isOpen, onClose])
+      if (e.key === 'Escape') onClose();
+    };
+    window.addEventListener('keydown', handleEsc);
+    return () => window.removeEventListener('keydown', handleEsc);
+  }, [onClose]);
+
+  const handleBackdropClick = (e: React.MouseEvent) => {
+    if (e.target === e.currentTarget) onClose();
+  };
 
   return (
     <AnimatePresence>
       {isOpen && (
-        <>
-          {/* Backdrop */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          onClick={handleBackdropClick}
+          className="fixed inset-0 bg-black/70 backdrop-blur-md z-[100] flex items-center justify-center p-4"
+          role="dialog"
+          aria-modal="true"
+        >
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            onClick={onClose}
-            className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50"
-          />
-
-          {/* Modal */}
-          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 pointer-events-none">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95, y: 20 }}
-              animate={{ opacity: 1, scale: 1, y: 0 }}
-              exit={{ opacity: 0, scale: 0.95, y: 20 }}
-              transition={{ type: 'spring', duration: 0.3 }}
-              style={{ width: '100%', maxWidth: '340px' }}
-              className="relative pointer-events-auto"
+            initial={{ opacity: 0, scale: 0.95, y: 20 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            exit={{ opacity: 0, scale: 0.95, y: 20 }}
+            transition={{ type: 'spring', stiffness: 300, damping: 30 }}
+            style={{ width: '100%', maxWidth: '340px' }}
+            className="relative bg-white dark:bg-gray-800 rounded-xl shadow-2xl max-h-[85vh] overflow-y-auto pointer-events-auto mx-2"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              onClick={onClose}
+              className="absolute top-4 right-4 p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors z-10 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              aria-label="Fechar modal"
             >
-              <div className="bg-white dark:bg-gray-800 rounded-xl shadow-2xl max-h-[85vh] overflow-y-auto">
-                {/* Botão Fechar */}
-                <button
-                  onClick={onClose}
-                  className="absolute top-3 right-3 p-1.5 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors z-10"
-                  aria-label="Fechar"
-                >
-                  <X className="w-4 h-4 text-gray-500 dark:text-gray-400" />
-                </button>
+              <X className="w-5 h-5 text-gray-500 dark:text-gray-400" />
+            </button>
 
-                {/* Conteúdo */}
-                <div className="p-5">
-                  {children}
-                </div>
-              </div>
-            </motion.div>
-          </div>
-        </>
+            <div className="px-6 pt-10 pb-6">
+              {children}
+            </div>
+          </motion.div>
+        </motion.div>
       )}
     </AnimatePresence>
-  )
-}
+  );
+};
+
+export default AuthModal;
